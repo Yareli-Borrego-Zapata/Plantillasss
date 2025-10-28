@@ -1,5 +1,5 @@
 from flask import Flask, render_template , request, redirect, url_for, flash, session
-from datetime import datetime
+from datetime import datetime 
 
 app = Flask(__name__)
 app.config['SECRET_KEY']='secret_123'
@@ -66,6 +66,7 @@ def iniciar():
 
     if request.method == 'POST':
         correo = request.form.get('Correo_electronico', '').strip()
+        
         password = request.form.get('Contrasena', '')
 
         usuario = usuarios.get(correo)
