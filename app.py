@@ -5,9 +5,9 @@ app = Flask(__name__)
 app.config['SECRET_KEY']='secret_123'
 
 usuarios = {
-    'admin@correo.com': {
-        'password': 'Admin123',
-        'nombre': 'Administrador'
+    'estrella@correo.com': {
+        'password': 'estrella123',
+        'nombre': 'estrellla'
     }
 }
 
